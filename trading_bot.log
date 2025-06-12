@@ -1,0 +1,30 @@
+2025-05-07 18:41:21,983 - DEBUG - 4380388880 connState: None -> 0
+2025-05-07 18:41:21,983 - DEBUG - Connecting to 127.0.0.1:7497 w/ id:1
+2025-05-07 18:41:21,983 - DEBUG - 4380388880 connState: 0 -> 1
+2025-05-07 18:41:21,983 - DEBUG - msg b'\x00\x00\x00\tv100..157'
+2025-05-07 18:41:21,983 - DEBUG - REQUEST b'API\x00\x00\x00\x00\tv100..157'
+2025-05-07 18:41:21,983 - DEBUG - acquiring lock
+2025-05-07 18:41:21,983 - DEBUG - acquired lock
+2025-05-07 18:41:21,983 - DEBUG - exception from sendMsg (<class 'BrokenPipeError'>, BrokenPipeError(32, 'Broken pipe'), <traceback object at 0x105979a80>)
+2025-05-07 18:41:21,983 - DEBUG - releasing lock
+2025-05-07 18:41:21,983 - DEBUG - release lock
+2025-05-07 18:41:21,983 - INFO - ANSWER error {'reqId': -1, 'errorCode': 502, 'errorString': 'Couldn\'t connect to TWS. Confirm that "Enable ActiveX and Socket EClients" \nis enabled and connection port is the same as "Socket Port" on the \nTWS "Edit->Global Configuration...->API->Settings" menu. Live Trading ports: \nTWS: 7496; IB Gateway: 4001. Simulated Trading ports for new installations \nof version 954.1 or newer:  TWS: 7497; IB Gateway: 4002'}
+2025-05-07 18:41:21,983 - ERROR - ERROR -1 502 Couldn't connect to TWS. Confirm that "Enable ActiveX and Socket EClients" 
+is enabled and connection port is the same as "Socket Port" on the 
+TWS "Edit->Global Configuration...->API->Settings" menu. Live Trading ports: 
+TWS: 7496; IB Gateway: 4001. Simulated Trading ports for new installations 
+of version 954.1 or newer:  TWS: 7497; IB Gateway: 4002
+2025-05-07 18:41:21,983 - INFO - could not connect
+2025-05-07 18:41:21,983 - DEBUG - 4380388880 connState: 1 -> 0
+2025-05-07 18:41:21,983 - INFO - disconnecting
+2025-05-07 18:41:21,983 - DEBUG - disconnecting
+2025-05-07 18:41:21,983 - DEBUG - disconnected
+2025-05-07 18:41:21,983 - INFO - ANSWER connectionClosed {}
+2025-05-07 18:41:21,983 - DEBUG - 4380388880 connState: None -> 0
+2025-05-07 18:41:21,984 - DEBUG - 4380388880 isConn: 0, connConnected: None
+2025-05-07 18:41:21,984 - DEBUG - 4380388880 connState: 0 -> 0
+2025-05-07 18:41:37,681 - ERROR - Failed to connect to Interactive Brokers
+2025-05-07 18:41:37,683 - INFO - Starting trading bot
+2025-05-07 18:41:37,683 - INFO - Running strategy for AAPL
+2025-05-07 18:41:38,707 - INFO - Running strategy for GOOG
+2025-05-07 18:41:39,715 - INFO - Running strategy for AMZN

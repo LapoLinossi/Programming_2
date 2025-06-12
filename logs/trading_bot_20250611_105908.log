@@ -1,0 +1,50 @@
+2025-06-11 10:59:08,974 - llm_reporter - INFO - Successfully initialized Gemini client
+2025-06-11 10:59:08,974 - root - INFO - LLM Reporter initialized successfully with OpenAI GPT-3.5-turbo
+2025-06-11 10:59:08,985 - ibapi.client - INFO - sent startApi
+2025-06-11 10:59:08,985 - ibapi.client - INFO - REQUEST startApi {}
+2025-06-11 10:59:08,985 - ibapi.client - INFO - SENDING startApi b'\x00\x00\x00\x0871\x002\x001\x00\x00'
+2025-06-11 10:59:08,986 - ibapi.wrapper - INFO - ANSWER connectAck {}
+2025-06-11 10:59:08,988 - ibapi.wrapper - INFO - ANSWER managedAccounts {'accountsList': 'DUK714781'}
+2025-06-11 10:59:08,988 - ibapi.wrapper - INFO - ANSWER nextValidId {'orderId': 1250}
+2025-06-11 10:59:08,988 - root - INFO - Next Valid Order ID: 1250
+2025-06-11 10:59:08,988 - ibapi.wrapper - INFO - ANSWER error {'reqId': -1, 'errorCode': 2104, 'errorString': 'Market data farm connection is OK:usfarm'}
+2025-06-11 10:59:08,988 - ibapi.wrapper - ERROR - ERROR -1 2104 Market data farm connection is OK:usfarm
+2025-06-11 10:59:08,988 - root - INFO - IB API Info: 2104 - Market data farm connection is OK:usfarm
+2025-06-11 10:59:08,988 - ibapi.wrapper - INFO - ANSWER error {'reqId': -1, 'errorCode': 2107, 'errorString': 'HMDS data farm connection is inactive but should be available upon demand.ushmds'}
+2025-06-11 10:59:08,988 - ibapi.wrapper - ERROR - ERROR -1 2107 HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-06-11 10:59:08,988 - root - ERROR - IB API Error -1 2107 HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-06-11 10:59:08,988 - ibapi.wrapper - INFO - ANSWER error {'reqId': -1, 'errorCode': 2158, 'errorString': 'Sec-def data farm connection is OK:secdefnj'}
+2025-06-11 10:59:08,988 - ibapi.wrapper - ERROR - ERROR -1 2158 Sec-def data farm connection is OK:secdefnj
+2025-06-11 10:59:08,988 - root - INFO - IB API Info: 2158 - Sec-def data farm connection is OK:secdefnj
+2025-06-11 10:59:09,091 - root - INFO - Connected to Interactive Brokers API (Port: 4002)
+2025-06-11 10:59:09,091 - order - INFO - OrderManager initialized with short selling capability
+2025-06-11 10:59:09,091 - reporting - INFO - Reporter initialized - Chart dir: charts, Report dir: reports
+2025-06-11 10:59:09,091 - reporting - INFO - LLM reporter available: True
+2025-06-11 10:59:09,091 - root - INFO - Reporter initialized with chart directory: charts
+2025-06-11 10:59:09,091 - root - INFO - Starting trading bot with short selling capability
+2025-06-11 10:59:09,091 - ibapi.client - INFO - REQUEST reqPositions {}
+2025-06-11 10:59:09,091 - ibapi.client - INFO - SENDING reqPositions b'\x00\x00\x00\x0561\x001\x00'
+2025-06-11 10:59:09,091 - root - INFO - Running strategy for AEGISVOPAK
+2025-06-11 10:59:09,091 - fetch_data - INFO - Fetching historical data for AEGISVOPAK
+2025-06-11 10:59:09,091 - ibapi.client - INFO - REQUEST reqHistoricalData {'reqId': 1, 'contract': 4412144912: 0,AEGISVOPAK,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'endDateTime': '20250611-10:59:09', 'durationStr': '60 D', 'barSizeSetting': '1 day', 'whatToShow': 'TRADES', 'useRTH': 1, 'formatDate': 1, 'keepUpToDate': False, 'chartOptions': []}
+2025-06-11 10:59:09,091 - ibapi.client - INFO - SENDING reqHistoricalData b'\x00\x00\x00W20\x001\x000\x00AEGISVOPAK\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x0020250611-10:59:09\x001 day\x0060 D\x001\x00TRADES\x001\x000\x00\x00'
+2025-06-11 10:59:09,094 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4412144240: 4762,BA,STK,,0.0,,,NYSE,,USD,BA,BA,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 10:59:09,094 - root - INFO - Current position for BA: 0.0 shares at avg cost 0.0
+2025-06-11 10:59:09,094 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4412145632: 756790,SVT,STK,,0.0,,,AMEX,,USD,SVT,SVT,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 10:59:09,094 - root - INFO - Current position for SVT: 0.0 shares at avg cost 0.0
+2025-06-11 10:59:09,094 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4412143952: 88819736,NBIS,STK,,0.0,,,NASDAQ,,USD,NBIS,NMS,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 10:59:09,094 - root - INFO - Current position for NBIS: 0.0 shares at avg cost 0.0
+2025-06-11 10:59:09,094 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4412145488: 4627828,GS,STK,,0.0,,,NYSE,,USD,GS,GS,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 10:59:09,094 - root - INFO - Current position for GS: 0.0 shares at avg cost 0.0
+2025-06-11 10:59:09,094 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4412144240: 11031,PFE,STK,,0.0,,,NYSE,,USD,PFE,PFE,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 10:59:09,094 - root - INFO - Current position for PFE: 0.0 shares at avg cost 0.0
+2025-06-11 10:59:09,094 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4412145632: 76792991,TSLA,STK,,0.0,,,NASDAQ,,USD,TSLA,NMS,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 10:59:09,094 - root - INFO - Current position for TSLA: 0.0 shares at avg cost 0.0
+2025-06-11 10:59:09,094 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4412143952: 382633646,NET,STK,,0.0,,,NYSE,,USD,NET,NET,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 10:59:09,094 - root - INFO - Current position for NET: 0.0 shares at avg cost 0.0
+2025-06-11 10:59:09,094 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4412145488: 15124833,NFLX,STK,,0.0,,,NASDAQ,,USD,NFLX,NMS,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 10:59:09,094 - root - INFO - Current position for NFLX: 0.0 shares at avg cost 0.0
+2025-06-11 10:59:09,094 - ibapi.wrapper - INFO - ANSWER positionEnd {}
+2025-06-11 10:59:09,210 - ibapi.wrapper - INFO - ANSWER error {'reqId': 1, 'errorCode': 200, 'errorString': 'No security definition has been found for the request'}
+2025-06-11 10:59:09,210 - ibapi.wrapper - ERROR - ERROR 1 200 No security definition has been found for the request
+2025-06-11 10:59:09,210 - root - ERROR - IB API Error 1 200 No security definition has been found for the request

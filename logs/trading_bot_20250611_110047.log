@@ -1,0 +1,68 @@
+2025-06-11 11:00:47,262 - llm_reporter - INFO - Successfully initialized Gemini client
+2025-06-11 11:00:47,262 - root - INFO - LLM Reporter initialized successfully with OpenAI GPT-3.5-turbo
+2025-06-11 11:00:47,272 - ibapi.client - INFO - sent startApi
+2025-06-11 11:00:47,272 - ibapi.client - INFO - REQUEST startApi {}
+2025-06-11 11:00:47,272 - ibapi.client - INFO - SENDING startApi b'\x00\x00\x00\x0871\x002\x001\x00\x00'
+2025-06-11 11:00:47,272 - ibapi.wrapper - INFO - ANSWER connectAck {}
+2025-06-11 11:00:47,274 - ibapi.wrapper - INFO - ANSWER managedAccounts {'accountsList': 'DUK714781'}
+2025-06-11 11:00:47,274 - ibapi.wrapper - INFO - ANSWER nextValidId {'orderId': 1250}
+2025-06-11 11:00:47,274 - root - INFO - Next Valid Order ID: 1250
+2025-06-11 11:00:47,274 - ibapi.wrapper - INFO - ANSWER error {'reqId': -1, 'errorCode': 2104, 'errorString': 'Market data farm connection is OK:usfarm'}
+2025-06-11 11:00:47,275 - ibapi.wrapper - ERROR - ERROR -1 2104 Market data farm connection is OK:usfarm
+2025-06-11 11:00:47,275 - root - INFO - IB API Info: 2104 - Market data farm connection is OK:usfarm
+2025-06-11 11:00:47,275 - ibapi.wrapper - INFO - ANSWER error {'reqId': -1, 'errorCode': 2107, 'errorString': 'HMDS data farm connection is inactive but should be available upon demand.ushmds'}
+2025-06-11 11:00:47,275 - ibapi.wrapper - ERROR - ERROR -1 2107 HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-06-11 11:00:47,275 - root - ERROR - IB API Error -1 2107 HMDS data farm connection is inactive but should be available upon demand.ushmds
+2025-06-11 11:00:47,275 - ibapi.wrapper - INFO - ANSWER error {'reqId': -1, 'errorCode': 2158, 'errorString': 'Sec-def data farm connection is OK:secdefnj'}
+2025-06-11 11:00:47,275 - ibapi.wrapper - ERROR - ERROR -1 2158 Sec-def data farm connection is OK:secdefnj
+2025-06-11 11:00:47,275 - root - INFO - IB API Info: 2158 - Sec-def data farm connection is OK:secdefnj
+2025-06-11 11:00:47,377 - root - INFO - Connected to Interactive Brokers API (Port: 4002)
+2025-06-11 11:00:47,377 - order - INFO - OrderManager initialized with short selling capability
+2025-06-11 11:00:47,377 - reporting - INFO - Reporter initialized - Chart dir: charts, Report dir: reports
+2025-06-11 11:00:47,377 - reporting - INFO - LLM reporter available: True
+2025-06-11 11:00:47,377 - root - INFO - Reporter initialized with chart directory: charts
+2025-06-11 11:00:47,377 - root - INFO - Starting trading bot with short selling capability
+2025-06-11 11:00:47,378 - ibapi.client - INFO - REQUEST reqPositions {}
+2025-06-11 11:00:47,378 - ibapi.client - INFO - SENDING reqPositions b'\x00\x00\x00\x0561\x001\x00'
+2025-06-11 11:00:47,378 - root - INFO - Running strategy for SUPX
+2025-06-11 11:00:47,378 - fetch_data - INFO - Fetching historical data for SUPX
+2025-06-11 11:00:47,378 - ibapi.client - INFO - REQUEST reqHistoricalData {'reqId': 1, 'contract': 4667245536: 0,SUPX,STK,,0.0,,,SMART,,USD,,,False,,combo:, 'endDateTime': '20250611-11:00:47', 'durationStr': '60 D', 'barSizeSetting': '1 day', 'whatToShow': 'TRADES', 'useRTH': 1, 'formatDate': 1, 'keepUpToDate': False, 'chartOptions': []}
+2025-06-11 11:00:47,378 - ibapi.client - INFO - SENDING reqHistoricalData b'\x00\x00\x00Q20\x001\x000\x00SUPX\x00STK\x00\x000.0\x00\x00\x00SMART\x00\x00USD\x00\x00\x000\x0020250611-11:00:47\x001 day\x0060 D\x001\x00TRADES\x001\x000\x00\x00'
+2025-06-11 11:00:47,381 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4667097056: 4762,BA,STK,,0.0,,,NYSE,,USD,BA,BA,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 11:00:47,381 - root - INFO - Current position for BA: 0.0 shares at avg cost 0.0
+2025-06-11 11:00:47,381 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4667245392: 756790,SVT,STK,,0.0,,,AMEX,,USD,SVT,SVT,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 11:00:47,381 - root - INFO - Current position for SVT: 0.0 shares at avg cost 0.0
+2025-06-11 11:00:47,381 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4667246304: 88819736,NBIS,STK,,0.0,,,NASDAQ,,USD,NBIS,NMS,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 11:00:47,381 - root - INFO - Current position for NBIS: 0.0 shares at avg cost 0.0
+2025-06-11 11:00:47,381 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4667245728: 4627828,GS,STK,,0.0,,,NYSE,,USD,GS,GS,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 11:00:47,381 - root - INFO - Current position for GS: 0.0 shares at avg cost 0.0
+2025-06-11 11:00:47,381 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4667246400: 11031,PFE,STK,,0.0,,,NYSE,,USD,PFE,PFE,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 11:00:47,381 - root - INFO - Current position for PFE: 0.0 shares at avg cost 0.0
+2025-06-11 11:00:47,382 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4667245872: 76792991,TSLA,STK,,0.0,,,NASDAQ,,USD,TSLA,NMS,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 11:00:47,382 - root - INFO - Current position for TSLA: 0.0 shares at avg cost 0.0
+2025-06-11 11:00:47,382 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4667246592: 382633646,NET,STK,,0.0,,,NYSE,,USD,NET,NET,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 11:00:47,382 - root - INFO - Current position for NET: 0.0 shares at avg cost 0.0
+2025-06-11 11:00:47,382 - ibapi.wrapper - INFO - ANSWER position {'account': 'DUK714781', 'contract': 4667246688: 15124833,NFLX,STK,,0.0,,,NASDAQ,,USD,NFLX,NMS,False,,combo:, 'position': 0.0, 'avgCost': 0.0}
+2025-06-11 11:00:47,382 - root - INFO - Current position for NFLX: 0.0 shares at avg cost 0.0
+2025-06-11 11:00:47,382 - ibapi.wrapper - INFO - ANSWER positionEnd {}
+2025-06-11 11:00:48,271 - ibapi.wrapper - INFO - ANSWER error {'reqId': -1, 'errorCode': 2106, 'errorString': 'HMDS data farm connection is OK:ushmds'}
+2025-06-11 11:00:48,271 - ibapi.wrapper - ERROR - ERROR -1 2106 HMDS data farm connection is OK:ushmds
+2025-06-11 11:00:48,271 - root - INFO - IB API Info: 2106 - HMDS data farm connection is OK:ushmds
+2025-06-11 11:00:48,654 - ibapi.wrapper - INFO - ANSWER error {'reqId': 1, 'errorCode': 2176, 'errorString': 'Warning: Your API version does not support fractional share size rules. Please upgrade to a minimum version 163. Trimmed value 934.71 to 934'}
+2025-06-11 11:00:48,655 - ibapi.wrapper - ERROR - ERROR 1 2176 Warning: Your API version does not support fractional share size rules. Please upgrade to a minimum version 163. Trimmed value 934.71 to 934
+2025-06-11 11:00:48,655 - root - ERROR - IB API Error 1 2176 Warning: Your API version does not support fractional share size rules. Please upgrade to a minimum version 163. Trimmed value 934.71 to 934
+2025-06-11 11:00:48,661 - ibapi.wrapper - INFO - ANSWER historicalDataEnd {'reqId': 1, 'start': '20250412  11:00:47', 'end': '20250611  11:00:47'}
+2025-06-11 11:00:48,661 - root - INFO - Historical data download completed from 20250412  11:00:47 to 20250611  11:00:47
+2025-06-11 11:00:48,732 - fetch_data - INFO - Received 60 data points for SUPX
+2025-06-11 11:00:48,744 - fetch_data - INFO - Successfully processed historical data for SUPX: 60 bars
+2025-06-11 11:00:48,755 - root - INFO - Generating chart for SUPX
+2025-06-11 11:00:48,755 - reporting - INFO - Creating chart for SUPX
+2025-06-11 11:00:49,001 - reporting - INFO - Chart saved to charts/supx_20250611_110048.png
+2025-06-11 11:00:49,001 - root - INFO - Signal analysis for SUPX: Price 10.3, SMA 10.552999999999999, RSI 44.82173174872666
+2025-06-11 11:00:49,001 - root - INFO - Long signals - Buy: False, Sell: False
+2025-06-11 11:00:49,001 - root - INFO - Short signals - Short: False, Cover: False
+2025-06-11 11:00:49,001 - checks - INFO - Current position for SUPX: 0
+2025-06-11 11:00:49,001 - root - INFO - No trading signals for SUPX at this time
+2025-06-11 11:00:50,002 - root - INFO - Generating portfolio report
+2025-06-11 11:00:50,003 - root - INFO - No positions currently in portfolio
+2025-06-11 11:00:50,003 - root - INFO - Completed signal check for all symbols, waiting for next cycle...

@@ -1,0 +1,10 @@
+source venv/bin/activate
+python main.py
+install gpt4alll
+llama3
+pip install llama-cpp-python
+
+
+Credentials IB broker:
+Sterrminator117
+sufsAk-cizvi7-vaxxuj
