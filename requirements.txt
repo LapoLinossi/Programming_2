@@ -1,0 +1,6 @@
+dotenv
+numpy
+pandas
+ibapi>=9.81.1
+matplotlib
+google-generativeai
